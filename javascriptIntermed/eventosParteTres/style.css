@@ -1,0 +1,13 @@
+img {
+  width: 300px;
+  margin-bottom: 25px;
+}
+
+div {
+  width: 400px;
+  display: flex;
+  padding: 10px;
+  font-size: 2rem;
+  background-color: cornflowerblue;
+  color: aliceblue;
+}

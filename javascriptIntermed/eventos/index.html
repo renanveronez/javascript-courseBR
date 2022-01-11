@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+
+</head>
+
+<body>
+
+  <h3 ck="console.log('H3 foi clicado')">Clique em mim</h3>
+  <h3 ck="h3click()">Clique em mim por função</h3>
+
+  <h3 ck="console.log(this)">Clique em mim usando this</h3>
+  <!-- Nesse contexto, this vai ser o próprio elemento -->
+
+  <br />
+  <h1 ck="this.style.color = 'red'">Troque para vermelho</h1>
+
+
+  <h2>Alterar texto pelo input</h2>
+  <input id="alterarTexto" type="text" onchange="changeH2()">
+  <!-- Após escrever texto no input, irá alterar texto do h2 -->
+
+
+  <!-- Alterar texto usando this -->
+  <h2>Alterar texto pelo input usando this</h2>
+  <input type="text" onchange="changeH2this(this)">
+  <!-- Após escrever texto no input e apertar enter ou mudar o foco, irá alterar texto do h2 -->
+
+  <!-- Alterar texto usando this -->
+  <h2>Alterar texto pelo input usando oninput</h2>
+  <input type="text" oninput="changeH2oninput(this)">
+  <!-- Altera o valor conforme digita no input -->
+
+  <br />
+  <br />
+
+  <h3 id="hideText">Esconder texto clicando no button Click</h3>
+  <div class="cliqueteste" ck="hideH3()">Click</div>
+
+
+
+  <script src="./events.js"></script>
+</body>
+
+</html>
