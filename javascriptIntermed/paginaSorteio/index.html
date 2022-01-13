@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Document</title>
+
+  <script>
+
+    let pessoas = ["Igor", "Jose", "Marcos", "Pamela", "Joana"]
+
+    function sortear() {
+      let np = pessoas.length;                             // Número de pessoas
+
+      random = Math.random()
+      // console.log(random)
+
+      let ns = Math.floor(random * np)   // Número sorteado
+      // let ns = Math.round(random * np)   // Não pode utilizar o round, se não pode retornar 5 e o array é de 0 a 4
+      // console.log(ns)
+
+      document.getElementById("d").innerHTML = pessoas[ns];
+    }
+
+  </script>
+
+</head>
+
+<body>
+
+  <h1 id="d"></h1>
+  <button onclick="sortear()">Sortear</button>
+
+</body>
+
+</html>
