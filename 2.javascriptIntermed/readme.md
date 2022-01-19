@@ -102,3 +102,18 @@ https://i.imgur.com/uarfKVg.png
 
 </div>
 ```
+
+##### Aula Timer e Intervalos
+
+setTimeout -> Executa uma função depois de um determinado tempo. (Executa uma vez só)
+  - Recebe dois argumentos:
+    1º arg: O que deseja fazer (uma função)
+    2º arg: Tempo de delay desejado
+```js
+setTimeout()
+```
+
+setInterval -> Executa uma função a cada intervalo de tempo
+    - Recebe dois argumentos:
+    1º arg: O que deseja fazer (uma função)
+    2º arg: Tempo do intervalo

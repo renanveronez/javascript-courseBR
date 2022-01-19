@@ -1,0 +1,27 @@
+[width="500"] {
+  color: red;
+}
+
+[width] {
+  font-weight: bold;
+}
+
+
+/* Vai pegar todo title que tnhea a palavra "titulo" */
+[title~="titulo"] {
+  color: blue;
+}
+
+/* Vai pegar todos title que COMECE com "sub" */
+[title^="sub"] {
+  background-color: green;
+}
+
+/* Vai pegar todos title que terminarem com 2 */
+[title$="2"] {
+  font-size: 40px;
+}
+
+[title*="plo"] {
+  color: chartreuse;
+}

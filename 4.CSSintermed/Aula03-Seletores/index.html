@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+
+  <h1 title="titulo 1">Título 1</h1>
+
+  <p>Um texto qualquer.</p>
+  <p width=500>Texto selecionado com seletor width 500</p>
+
+  <h2 title="titulo 2">Título 2</h2>
+  <p title="exemplo">Um texto qualquer.</p>
+  <p>Um texto qualquer.</p>
+  <p width=500>Texto selecionado com seletor width 500</p>
+
+  <h3 title="titulo 3">Título 3</h3>
+  <p>Um texto qualquer.</p>
+  <p title="exemplo">Outro texto qualquer.</p>
+
+
+  <h3 title="subtitulo">Subtítulo</h3>
+  <p>Um texto qualquer.</p>
+  <p width=300>Texto selecionado com seletor width</p>
+
+  <script>
+
+    let titulos = document.querySelectorAll("[title]")
+    let exemplo = document.querySelectorAll("[title*=emplo]")
+    console.log(titulos)
+
+  </script>
+
+</body>
+
+</html>

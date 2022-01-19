@@ -1,0 +1,31 @@
+p::first-line {
+  color: red;
+}
+
+li {
+  list-style: none;
+}
+
+/* Primeiro li */
+.Ex1 {  
+  margin-left: 80px;
+  /* list-style: none;  */
+  list-style-image: url(./google.png);
+}
+
+.Ex2::before {
+  list-style: none;
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(./google.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+li::after {
+  content: " ->";
+  color: green;
+}
